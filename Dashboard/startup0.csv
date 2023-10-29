@@ -1,0 +1,60 @@
+Startup Name,Sector,Founding Year,Series A,Series B,Series C,Series D,Total Funding Raised,Employees,Series A Purpose,Series B Purpose,Series C Purpose,Series D Purpose,Location,2018 Rev,2019 Rev,2020 Rev,2021 Rev,2022 Rev,2023 Rev,Total Revenue,Profitable
+AlphaAI,AI,2022,1.5,2.5,NULL,NULL,4,20,Research,Development,NULL,NULL,Bengaluru,1,-,-,2,3,4,10,Yes
+BetaHealth,Healthtech,2019,1.2,2.8,4,5.5,13.5,45,R&D,Market Expansion,Scaling,Global Expansion,Mumbai,1,-,-,2.5,3.5,4.5,10.5,No
+GammaFintech,Fintech,2020,1,2,3.5,4.8,11.3,30,Product Dev,Market Expansion,Scaling,NULL,Delhi,1,-,-,-,2,3,5,no
+DeltaConsumer,Consumer,2018,2,3,5,NULL,10,50,Product Launch,Marketing,Expansion,NULL,Mumbai,1,2,3,4,5,-,14,Yes
+EpsilonEV,EV,2023,1.8,NULL,NULL,NULL,1.8,10,Research,NULL,NULL,NULL,Chennai,1,-,-,-,1,-,1,No
+ZetaAI,AI,2021,1,2.5,4,NULL,7.5,25,Research,Development,Market Expansion,NULL,Mumbai,1,-,-,-,2,3,5,No
+EtaHealth,Healthtech,2019,1.2,2.8,4.5,6,14.5,40,R&D,Market Expansion,Scaling,Global Expansion,Bengaluru,1,-,2,0.5,5,6.5,17,Yes
+ThetaFintech,Fintech,2018,1.5,3,4.5,6,15,60,Product Dev,Market Expansion,Scaling,Global Expansion,Mumbai,-,2,3.5,5,6.5,8,25,Yes
+IotaConsumer,Consumer,2022,1,2,NULL,NULL,3,15,Product Launch,Marketing,NULL,NULL,Bengaluru,1,-,-,,2,3,6,Yes
+KappaEV,EV,2023,0.8,NULL,NULL,NULL,0.8,10,Research,NULL,NULL,NULL,Mumbai,-,-,-,-,-,0.5,0.5,No
+LambdaAI,AI,2020,1.2,2.5,4,NULL,7.7,30,Research,Development,Market Expansion,NULL,Mumbai,-,-,-,-,2,3,5,Yes
+MuHealth,Healthtech,2018,1.5,3,5,6.5,16,55,R&D,Market Expansion,Scaling,Global Expansion,Bengaluru,1,1,3.5,5,6.5,8,23,Yes
+NuFintech,Fintech,2021,0.8,1.5,3,NULL,5.3,20,Product Dev,Market Expansion,Scaling,NULL,Mumbai,-,-,-,-,1,2,3,Yes
+XiConsumer,Consumer,2020,1.2,2.8,4,5.5,13.5,40,Product Launch,Marketing,Expansion,Global Expansion,Mumbai,-,0.5,-,-,2,2.5,5,No
+OmicronEV,EV,2019,1,2.5,4.5,6,14,50,Research,Development,Market Expansion,Global Expansion,Mumbai,-,-,-,-,2.5,4,6.5,No
+RhoAI,AI,2018,1.5,3,4.5,6,15,60,Research,Development,Market Expansion,Global Expansion,Mumbai,-,2,3.5,5,6.5,8,25,Yes
+SigmaHealth,Healthtech,2023,0.8,1.5,3,NULL,5.3,20,R&D,Market Expansion,Scaling,NULL,Bengaluru,-,-,-,-,1,2,3,No
+TauFintech,Fintech,2017,2,3.5,5,7,17.5,50,Product Dev,Market Expansion,Scaling,Global Expansion,Mumbai,-,-,-,2,3,4,9,No
+UpsilonConsumer,Consumer,2019,1.2,2.8,4,5.5,13.5,45,Product Launch,Marketing,Expansion,Global Expansion,Mumbai,-,-,-,2.5,3.5,4.5,10.5,No
+PhiEV,EV,2018,1.5,3,4.5,NULL,9,30,Research,Development,Market Expansion,NULL,Benagaluru,-,2,-,3,2.5,-,7.5,No
+ChiAI,AI,2022,1,2.5,4,NULL,7.5,25,Research,Development,Market Expansion,NULL,Mumbai,-,-,-,2,3,4,9,No
+PsiHealth,Healthtech,2019,1.2,2.8,4.5,6,14.5,40,R&D,Market Expansion,Scaling,Global Expansion,Mumbai,1,-,2,1.5,3.5,2.5,10.5,No
+OmegaFintech,Fintech,2018,1.5,3,4.8,NULL,9.3,35,Product Dev,Market Expansion,Scaling,NULL,Mumbai,-,-,-,3,4,-,7,No
+DeltaConsumer,Consumer,2022,0.8,1.5,NULL,NULL,2.3,10,Product Launch,Marketing,NULL,NULL,Bengaluru,-,-,-,-,1,2,3,No
+ZetaEV,EV,2023,1,2,NULL,NULL,3,15,Research,Development,Market Expansion,NULL,Mumbai,-,-,-,-,-,1.5,1.5,No
+AlphaAI,AI,2020,1.2,2.8,4,NULL,8,30,Research,Development,Market Expansion,NULL,Mumbai,-,-,-,-,2.5,3.5,6,No
+MuHealth,Healthtech,2018,1.5,3,4.5,NULL,9,35,R&D,Market Expansion,Scaling,NULL,Bengaluru,-,-,-,-,3,4,7,No
+NuFintech,Fintech,2021,0.8,1.5,3,NULL,4.3,15,Product Dev,Market Expansion,Scaling,NULL,Mumbai,-,-,-,-,1.5,2,3.5,No
+XiConsumer,Consumer,2020,1,2.5,4.5,NULL,8,25,Product Launch,Marketing,Expansion,NULL,Delhi,0,0,0,0,0,0,0,No
+Pice,Fintech,2019,1.2,2.5,4,NULL,7.7,100,Research,Development,NULL,NULL,Bangalore,0.5,0,0,0,3.6,4,8.1,Yes
+Onsurity,Insurtech,2016,1.8,NULL,NULL,NULL,1.8,200,R&D,Market Expansion,Scaling,Global Expansion,Mumbai,0,2,4,,0,0,9,Yes
+OneCode,Ecommerce,2018,0.8,1.5,3,NULL,4.3,150,Product Dev,Market Expansion,Scaling,NULL,Delhi,2,0,0,0,6,0,8,Yes
+Kiwi,Foodtech,2017,1.5,3,4.8,NULL,9.3,100,Product Launch,Marketing,Expansion,NULL,Hyderabad,5,3,8,0,0,0,15,Yes
+Jify,Logistics,2020,1.5,2.5,NULL,NULL,4,50,Research,NULL,NULL,NULL,Pune,7,9,,5,0,11,30,Yes
+InvestMint,Wealthtech,2019,2,3,5,NULL,10,75,Research,Development,Market Expansion,NULL,Mumbai,0,0,2,0,3,,5,No
+Observe AI,SaaS,2017,1,2,NULL,NULL,3,250,R&D,Market Expansion,Scaling,Global Expansion,Bangalore,0,0,0,0,4,0,4,Yes
+Triomics,Healthcare,2018,1.5,3,4.5,6,15,100,Product Dev,Market Expansion,Scaling,Global Expansion,Hyderabad,0,4,0,0,4,1,9,No
+Nektar,Fintech,2019,1.2,2.8,4,5.5,13.5,50,Product Launch,Marketing,NULL,NULL,Bangalore,0,0,0,0,0,1,1,No
+Jiffy.ai,AI,2020,1.2,2.8,4.5,6,14.5,25,Research,NULL,NULL,NULL,Mumbai,1,-,-,2,3,4,10,No
+Grigaml,Foodtech,2019,0.8,1.5,NULL,NULL,2.3,75,Research,Development,Market Expansion,NULL,Delhi,1,-,-,2.5,3.5,4.5,10.5,Yes
+Kazam,E-commerce,2018,1.5,3,4.5,NULL,9,100,R&D,Market Expansion,Scaling,Global Expansion,Hyderabad,1,-,-,-,2,3,5,No
+Vidyut,Electric Vehicles,2017,0.8,NULL,NULL,NULL,0.8,250,Product Dev,Market Expansion,Scaling,NULL,Bangalore,1,2,3,4,5,-,14,Yes
+Pure,Electric Vehicles,2019,1.2,2.8,4,NULL,8,50,Product Launch,Marketing,Expansion,Global Expansion,Mumbai,1,-,-,-,1,-,1,No
+Revolt,Electric Vehicles,2015,1.5,3,4.5,6.5,16,1000,Research,Development,Market Expansion,Global Expansion,Delhi,1,-,-,-,2,3,5,No
+Tzuyu,Edtech,2018,1.2,2.8,4.5,NULL,9.3,50,Research,Development,Market Expansion,Global Expansion,Hyderabad,1,-,2,0.5,5,6.5,17,Yes
+Emo,Healthtech,2019,1.5,3,4.5,NULL,9,75,R&D,Market Expansion,Scaling,NULL,Bangalore,-,-,-,-,2.5,3.5,6,No
+Magneta,Fintech,2020,1,2,3.5,4.8,11.3,25,Product Dev,Market Expansion,Scaling,Global Expansion,Mumbai,-,-,-,-,3,4,7,No
+Corrit Electric,Electric Vehicles,2017,1.2,2.8,4.5,6,14.5,250,Product Launch,Marketing,Expansion,Global Expansion,Delhi,-,-,-,-,1.5,2,3.5,No
+Cell Propulsion,Electric Vehicles,2018,1,2,3.5,NULL,6.5,100,Research,Development,Market Expansion,NULL,Hyderabad,0,0,3,0,3,0,6,No
+Exponent,Fintech,2019,1,2.5,4.5,NULL,8,75,Research,Development,Market Expansion,NULL,Bangalore,0.5,0,0,0,3.6,4,8.1,Yes
+Jai Kisan,Agritech,2020,1.5,3,4.5,NULL,9,25,R&D,Market Expansion,Scaling,Global Expansion,Mumbai,0,2,4,,0,0,9,Yes
+ApnaKlub,Social Commerce,2019,1,2,3.5,4.8,11.3,100,Product Dev,Market Expansion,Scaling,NULL,Delhi,-,0.5,-,-,2,2.5,5,No
+BatterySmart,Electric Vehicles,2017,2,3.5,5,7,17.5,250,Product Launch,Marketing,NULL,NULL,Hyderabad,-,-,-,-,2.5,4,6.5,No
+SmartStaff,HRtech,2018,1.5,3,4.5,6,15,100,Research,Development,Market Expansion,NULL,Bangalore,-,2,3.5,5,6.5,8,25,Yes
+Electric PE,Electric Vehicles,2019,1.2,2.8,4.5,6,14.5,75,Research,Development,Market Expansion,NULL,Mumbai,-,-,-,-,1,2,3,No
+Flash,Delivery,2020,1.5,3,4.5,NULL,9,25,R&D,Market Expansion,Scaling,NULL,Delhi,-,-,-,2,3,4,9,Yes
+Azorte,Fintech,2017,1.2,2.8,4.5,NULL,9.3,250,Product Dev,Market Expansion,Scaling,NULL,Hyderabad,-,-,-,5,6,7,13,Yes
+Ultrahuman,Healthtech,2018,0.8,1.5,3,NULL,4.3,100,Product Launch,Marketing,Expansion,NULL,Bangalore,-,-,-,5,7,1,14,Yes
+Lovelocal,Ecommerce,2019,1,2,NULL,NULL,3,45,Product Launch,Marketing,NULL,NULL,Mumbai,-,2,3.5,5,6.5,8,25,Yes

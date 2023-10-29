@@ -70,6 +70,95 @@ fig_pie_count = px.pie(grouped_counts, values='Count', names='Sector',
                        color_discrete_sequence=px.colors.qualitative.Set3)
 st.plotly_chart(fig_pie_count)
 
+df['Age'] = 2023 - df['Founding Year'].astype(int)
+fig_scatter = px.scatter(df, x='Age', y='CAGR', hover_data=['Startup Name'], 
+                         title='CAGR vs Age of Companies', 
+                         color_discrete_sequence=px.colors.qualitative.Set3)
+
+st.plotly_chart(fig_scatter)
+
+sector_funding = df.groupby('Sector')['Total Funding Raised'].sum().reset_index()
+
+# Creating the donut chart
+fig = px.pie(sector_funding, names='Sector', values='Total Funding Raised', hole=0.3,
+             title="Total Funding Raised by Sector")
+fig.update_traces(textinfo='percent+label', pull=[0.1, 0.1, 0.1, 0.1])  # Adjust this for a "pulled apart" look
+
+# Displaying the chart in Streamlit
+st.plotly_chart(fig)
+
+funding_rounds = ['Series A', 'Series B', 'Series C', 'Series D']
+purposes = ['Series A Purpose', 'Series B Purpose', 'Series C Purpose', 'Series D Purpose']
+vis_data = pd.DataFrame(columns=['Funding Round', 'Purpose', 'Count'])
+
+for round_, purpose in zip(funding_rounds, purposes):
+    purpose_counts = df[purpose].value_counts().reset_index()
+    purpose_counts.columns = ['Purpose', 'Count']
+    purpose_counts['Funding Round'] = round_
+    vis_data = pd.concat([vis_data, purpose_counts])
+
+# Create the stacked bar chart
+fig_stacked_bar = px.bar(vis_data, x='Funding Round', y='Count', color='Purpose', 
+                         title='Startup Funding Purposes by Round', 
+                         color_discrete_sequence=px.colors.qualitative.Set3)
+
+# Display the chart in Streamlit
+st.plotly_chart(fig_stacked_bar)
+
+
+# Display in streamlit
+st.plotly_chart(fig)
+
+# Function to determine the current funding round
+def get_current_funding_round(row):
+    for round_ in ['Series D', 'Series C', 'Series B', 'Series A']:
+        if row[round_] > 0:
+            return round_
+    return None
+
+# Apply the function to get the current funding round for each startup
+df['Current Funding Round'] = df.apply(get_current_funding_round, axis=1)
+
+# Filter out startups without any funding round info
+data_filtered = df.dropna(subset=['Current Funding Round'])
+
+# Create the scatter plot
+fig = px.scatter(data_filtered, x='Current Funding Round', y='CAGR', hover_data=['Startup Name'],
+                 title='Current Funding Round vs CAGR',
+                 category_orders={'Current Funding Round': ['Series A', 'Series B', 'Series C', 'Series D']},
+                 color_discrete_sequence=px.colors.qualitative.Set3)
+
+# Display the chart in Streamlit
+st.plotly_chart(fig)
+
+df_fintech = df[df['Sector'] == 'Fintech']
+
+# Computing Valuations for each year
+for year in range(2019, 2024):
+    column_name = f'{year} Valuation'
+    revenue_column = f'{year} Rev'
+    df_fintech[column_name] = df_fintech[revenue_column] * 6
+
+# Calculating average valuation for each year
+average_valuations = {}
+for year in range(2019, 2024):
+    column_name = f'{year} Valuation'
+    average_valuations[str(year)] = df_fintech[column_name].mean()
+
+# Plotting
+fig, ax = plt.subplots(figsize=(10, 6))
+years = list(average_valuations.keys())
+avg_values = list(average_valuations.values())
+ax.plot(years, avg_values, marker='o', label='Average Valuation')
+
+ax.set_title('Average Valuation-based Analysis of Fintech Sector (2019-2023)')
+ax.set_xlabel('Year')
+ax.set_ylabel('Average Valuation (Million $)')
+ax.legend()
+ax.grid(True)
+
+st.pyplot(fig)
+
 df_counts = df['Location'].value_counts().reset_index()
 df_counts.columns = ['Location', 'Startup Count']
 
@@ -99,10 +188,13 @@ layer = pdk.Layer(
     radius=200
 )
 
+
+
 view_state = pdk.ViewState(latitude=20.5937, longitude=78.9629, zoom=4)  # Over India
 r = pdk.Deck(layers=[layer], initial_view_state=view_state, map_style="mapbox://styles/mapbox/light-v9")
 st.title("Heat Map of Companies")
 st.pydeck_chart(r)
+
 
 # filtered_data['lat'] = filtered_data['Location'].map(lambda x: city_coordinates.get(x, [0, 0])[0])
 # filtered_data['lon'] = filtered_data['Location'].map(lambda x: city_coordinates.get(x, [0, 0])[1])
